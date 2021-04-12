@@ -84,7 +84,7 @@ const renderLog = () => {
       td.id = `td_${student.id}_${i - 1}`;
       td.classList = "cursor";
       if (!student.dateList[i - 1].here) {
-        td.classList = "notHere";
+        td.innerText="H";
       }
       td.addEventListener("click", notHere);
       tr.appendChild(td);
