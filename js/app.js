@@ -27,13 +27,13 @@ const log = {
     const index = this.list.findIndex((stud) => stud.id === idSt);
     if (index === -1) {
       return;
-    }
+    };
     const index2 = this.list[index].dateList.findIndex(
       (day) => day.id === idDay
     );
     if (index2 === -1) {
       return;
-    }
+    };
     this.list[index].dateList[index2].here = !this.list[index].dateList[index2]
       .here;
   },
