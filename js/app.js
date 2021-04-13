@@ -36,7 +36,6 @@ const log = {
     }
     this.list[index].dateList[index2].here = !this.list[index].dateList[index2]
       .here;
-    renderLog();
   },
 };
 const main = () => {
@@ -97,5 +96,6 @@ const notHere = (event) => {
   const idSt = +event.target.id.split("_")[1];
   const idDay = +event.target.id.split("_")[2];
   log.studentIsNotHere(idSt, idDay);
+  renderLog();
 };
 main();
